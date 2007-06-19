@@ -1,0 +1,13 @@
+## utilities for other rc files
+test -n "$VERBOSE" && echo $0... 1>&2
+
+# function to source a list rc files...
+function rc-source {
+    local rc
+    for rc in $@; do
+        if test -e "$HOME/rc/$rc"; then
+            source "$HOME/rc/$rc"
+        fi
+    done
+}
+

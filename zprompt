@@ -1,0 +1,17 @@
+## setup your zsh prompts here
+test -n "$VERBOSE" && echo $0... 1>&2
+
+## gray=30
+## red=31
+## green=32
+## yellow=33
+## blue=34
+## purple=35
+## cyan=36
+## white=37
+
+local title
+local esc=`echo -e "\033"`
+[[ $TERM == xterm* ]] && title="%{${esc}]0;%m:%~ (%n)"`echo -e "\007"`"%}"
+PROMPT="${title}%{${esc}[1;37m%}[ %{${esc}[%(!.31.32)m%}%n%{${esc}[37m%} ]%{${esc}[0m%} "
+RPROMPT="%{${esc}[1;36m%}%m%{${esc}[37m%}:%{${esc}[35m%}%~%{${esc}[0m%}"

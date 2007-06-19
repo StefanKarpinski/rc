@@ -1,0 +1,19 @@
+## zsh specific aliases
+test -n "$VERBOSE" && echo $0... 1>&2
+
+alias -g :l="|$PAGER"
+alias -g :g="|egrep"
+alias -g :t="|tee"
+alias -g :e="2>&1"
+alias -g :c="|wc -l"
+alias -g :h="--help :el"
+alias -g :el=":e :l"
+alias -g :eg=":e :g"
+alias -g :et=":e :t"
+alias -g :ec=":e :c"
+alias -g :gl="|pipe-to $PAGER : grep"
+alias -g :tl="|pipe-to $PAGER : tee"
+alias -g :egl=":e :gl"
+alias -g :etl=":e :tl"
+
+alias -g :R="| R --vanilla --quiet"

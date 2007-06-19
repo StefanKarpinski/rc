@@ -1,0 +1,24 @@
+## some useful functions
+test -n "$VERBOSE" && echo $0... 1>&2
+
+function pipe-to () {
+    local x lhs rhs
+    x=rhs
+    for arg in $*; do
+        test "$arg" == ":" && x=lhs \
+        || eval $x=\"\$$x $arg\"
+    done
+    eval "$lhs | $rhs"
+}
+
+function nxt () {
+    cd `next $*`
+}
+
+function prv () {
+    cd `next -prev $*`
+}
+
+function ri () {
+	command /opt/local/bin/ri -f ansi -T $* | less -f
+}

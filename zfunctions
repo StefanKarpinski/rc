@@ -1,0 +1,37 @@
+## functions for zsh sessions...
+test -n "$VERBOSE" && echo $0... 1>&2
+
+## tries to acquire a usable ssh auth socket...
+
+function ssh-auth-sock-acquire {
+    if test -z "$SSH_AUTH_SOCK" \
+       -o ! -O "$SSH_AUTH_SOCK" \
+       -o ! -r "$SSH_AUTH_SOCK"
+    then
+	setopt local_options null_glob
+        ## look for usable ssh auth sockets in /tmp...
+        for SSH_AUTH_SOCK in /tmp/ssh-*/agent.*
+        do
+            if test -O "$SSH_AUTH_SOCK" \
+                 -a -r "$SSH_AUTH_SOCK"
+            then
+                export SSH_AUTH_SOCK
+                break
+            fi
+            unset SSH_AUTH_SOCK
+        done
+    fi
+}
+
+## if that fails, then start a new ssh-agent and add the default identity...
+
+function ssh-auth-sock-acquire-or-start {
+    ssh-auth-sock-acquire
+    if test -z "$SSH_AUTH_SOCK" \
+       -o ! -O "$SSH_AUTH_SOCK" \
+       -o ! -r "$SSH_AUTH_SOCK"
+    then
+        eval `nohup ssh-agent` 1>&2
+	ssh-add
+    fi
+}

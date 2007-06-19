@@ -1,0 +1,70 @@
+## setup generic aliases
+test -n "$VERBOSE" && echo $0... 1>&2
+
+alias ls="ls -F --color=auto"
+alias la="ls -A"
+alias lr="ls -R"
+alias ll="ls -l"
+alias lld="ll -d"
+alias lla="la -l"
+alias llr="lr -l"
+alias lsl="pipe-to $PAGER : ls -CF --color=yes"
+alias lal="pipe-to $PAGER : ls -CFA --color=yes"
+alias lrl="pipe-to $PAGER : ls -CFR --color=yes"
+alias lll="pipe-to $PAGER : ls -lF --color=yes"
+alias lldl="pipe-to $PAGER : ls -lFd --color=yes"
+alias llal="pipe-to $PAGER : ls -lFA --color=yes"
+alias llrl="pipe-to $PAGER : ls -lFR --color=yes"
+alias rd="rmdir"
+alias md="mkdir -p"
+alias realpath="readlink -f"
+
+alias psu="ps -U $USER -H -www -o pid,user,%cpu,%mem,start,command"
+alias psa="ps -AH -www -o pid,user,%cpu,%mem,start,command"
+alias psul="pipe-to $PAGER : psu"
+alias psal="pipe-to $PAGER : psa"
+
+alias reload="exec \${0#-}"
+alias halt="sudo halt"
+alias reboot="sudo reboot"
+alias visudo="sudo visudo"
+alias cpan="sudo perl -MCPAN -e shell"
+alias perlf="perldoc -f"
+alias perld="perl -de0"
+alias rand="perl -le 'print rand \$ARGV[0]'"
+alias mt="mtn"
+alias pydb="python -m pdb"
+alias pyprof="python -m profile"
+alias pyc="python ~/bin/pyc.pyc"
+if test -x "/Applications/Mathematica 5.1.app/Contents/MacOS/MathKernel"; then
+alias math="/Applications/Mathematica\ 5.1.app/Contents/MacOS/MathKernel"
+fi
+alias rb="ruby -rruby/all"
+
+alias ssh="ssh-auth-sock-acquire-or-start && ssh"
+alias scp="ssh-auth-sock-acquire-or-start && scp"
+
+alias connect="ssh admin@10.0.2.1 sudo osascript connect.script"
+alias disconnect="ssh admin@10.0.2.1 sudo osascript disconnect.script"
+
+alias emerge="sudo emerge"
+alias apt-get="sudo apt-get"
+alias apt-upgrade="apt-get update && apt-get dist-upgrade --yes --fix-missing --fix-broken"
+
+# system-specific aliases...
+alias edit="$EDITOR"
+case `uname` in
+    Darwin) # OS X...
+        alias run="open -a"
+        alias edit="open -a TextMate"
+		alias psu="ps -U $USER -www -o pid,user,%cpu,%mem,start,command"
+		alias psa="ps -A -www -o pid,user,%cpu,%mem,start,command"
+        ;;
+    *) # anything else...
+    	alias edit="nano"
+		alias psu="ps -U $USER -H -www -o pid,user,%cpu,%mem,start,command"
+		alias psa="ps -AH -www -o pid,user,%cpu,%mem,start,command"
+esac
+
+# useful for automatic media downloading...
+alias xget="wget -c -m -k -p -E -K -np -A jpg,jpeg,JPG,JPEG,mpg,mpeg,MPG,MPEG,mov,MOV,avi,AVI,wmv,WMV,ps,PS,pdf,PDF,Z,zip,ZIP,gz,tgz,bz2,tbz2 --header 'Cookie: id=valid' --header 'Cookie: ssid=valid' --header 'User-Agent: Mozilla'"

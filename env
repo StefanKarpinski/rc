@@ -1,0 +1,38 @@
+## setup environment variables here
+test -n "$VERBOSE" && echo $0... 1>&2
+
+export HOST=`hostname`
+export USER="${USER:-${USERNAME:-$LOGNAME}}"
+export EMAIL="${USER}@${HOST}"
+
+export HISTFILE=$HOME/.history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+export PAGER=less
+export LESS="-grXFz-7"
+export EDITOR=nano
+export VISUAL=nano
+export FTP_PASSIVE=1
+export RSYNC_RSH=ssh
+export CVS_RSH=ssh
+
+# system-specific variables...
+export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
+export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/usr/X11R6/man:/usr/share/man"
+export PERL5LIB=".:lib:$HOME/lib/perl"
+export RUBYOPT=rubygems
+case `uname` in
+    Darwin) # OSX-specific...
+        export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin::/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
+        export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/sw/share/man:/usr/X11R6/man:/usr/share/man"
+        export PERL5LIB=".:lib:$HOME/lib/perl:/sw/lib/perl5"
+        export JAVA_HOME=/Library/Java/Home
+        export DISPLAY="${DISPLAY:-:0.0}"
+        source "/Library/Frameworks/R.framework/Versions/2.3/Resources/library/RSPerl/scripts/RSPerl.bsh"
+        ;;
+    *)
+esac
+
+# doesn't really belong here but...
+umask 077

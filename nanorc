@@ -1,0 +1,10 @@
+set	autoindent
+set	const
+set	cut
+set	fill 0
+set	multibuffer
+set	nowrap
+set	regexp
+set	smooth
+set	suspend
+set	tabsize 4
