@@ -27,9 +27,8 @@ case `uname` in
         export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin::/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
         export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/sw/share/man:/usr/X11R6/man:/usr/share/man"
         export PERL5LIB=".:lib:$HOME/lib/perl:/sw/lib/perl5"
-        export JAVA_HOME=/Library/Java/Home
+        export R_LIBS="$HOME/Library/R/library"
         export DISPLAY="${DISPLAY:-:0.0}"
-        source "/Library/Frameworks/R.framework/Versions/2.3/Resources/library/RSPerl/scripts/RSPerl.bsh"
         ;;
     *)
 esac

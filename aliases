@@ -40,9 +40,10 @@ if test -x "/Applications/Mathematica 5.1.app/Contents/MacOS/MathKernel"; then
 alias math="/Applications/Mathematica\ 5.1.app/Contents/MacOS/MathKernel"
 fi
 alias rb="ruby -rruby/all"
+alias R="R -q --vanilla"
 
-alias ssh="ssh-auth-sock-acquire-or-start && ssh"
-alias scp="ssh-auth-sock-acquire-or-start && scp"
+#alias ssh="ssh-auth-sock-acquire-or-start && ssh"
+#alias scp="ssh-auth-sock-acquire-or-start && scp"
 
 alias connect="ssh admin@10.0.2.1 sudo osascript connect.script"
 alias disconnect="ssh admin@10.0.2.1 sudo osascript disconnect.script"
