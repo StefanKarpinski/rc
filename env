@@ -6,8 +6,8 @@ export USER="${USER:-${USERNAME:-$LOGNAME}}"
 export EMAIL="${USER}@${HOST}"
 
 export HISTFILE=$HOME/.history
-export HISTSIZE=10000
-export SAVEHIST=10000
+export HISTSIZE=100000
+export SAVEHIST=100000
 
 export PAGER=less
 export LESS="-grXFz-7"

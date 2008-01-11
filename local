@@ -5,13 +5,10 @@ export EMAIL="sgk@cs.ucsb.edu"
 
 export PGDATA="$HOME/pgdata"
 export PGLOGFILE="$PGDATA/pgsql.log"
-export PGDATABASE=${PGDATABASE:-ietf_test}
+export PGDATABASE="${PGDATABASE:-ietf_test}"
 
-export R_LIBS=$HOME/Library/R/library
-
-export EC2_HOME="$HOME/projects/ec2"
-export EC2_CERT="$EC2_HOME/keys/cert-LGLDYQOEDIH36ROUY32Y7E6T23CJUWRU.pem"
-export EC2_PRIVATE_KEY="$EC2_HOME/keys/pk-LGLDYQOEDIH36ROUY32Y7E6T23CJUWRU.pem"
+export R_LIBS="$HOME/Library/R/library"
+export QUALNET_HOME="$HOME/qualnet/4.0"
 
 alias commit="test -x bin/commit.sh && bin/commit.sh || svn commit"
 alias matlab="/Applications/Matlab74/bin/matlab -nosplash -nodisplay -nodesktop -nojvm"

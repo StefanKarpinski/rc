@@ -38,18 +38,21 @@ zstyle ':completion:*' completer _complete _correct _approximate
 
 ### miscellaneous options and environment stuff ###
 
-setopt nohup
-setopt multios
-setopt correct
+setopt auto_cd
 setopt auto_pushd
+setopt auto_resume
+setopt correct
+setopt extended_glob
+setopt extended_history
+setopt function_argzero
+setopt multios
+setopt nohup
+setopt no_no_match
+setopt numeric_glob_sort
 setopt pushd_minus
 setopt pushd_ignore_dups
-setopt auto_resume
-setopt no_no_match
+setopt rc_quotes
 setopt short_loops
-setopt extended_glob
-setopt function_argzero
-setopt numeric_glob_sort
 
 ### miscellaneous stuff ###
 
@@ -59,4 +62,4 @@ ttyctl -f
 
 unalias -m \*
 rc-source aliases zaliases functions zfunctions zprompt local cleanup
-ssh-auth-sock-acquire-or-start
+#ssh-auth-sock-acquire-or-start
