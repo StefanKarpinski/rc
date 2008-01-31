@@ -9,6 +9,6 @@ export PGDATABASE="${PGDATABASE:-ietf_test}"
 
 export R_LIBS="$HOME/Library/R/library"
 export QUALNET_HOME="$HOME/qualnet/4.0"
+alias qualnet=$QUALNET_HOME/bin/qualnet
 
-alias commit="test -x bin/commit.sh && bin/commit.sh || svn commit"
 alias matlab="/Applications/Matlab74/bin/matlab -nosplash -nodisplay -nodesktop -nojvm"

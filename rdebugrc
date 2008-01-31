@@ -1,0 +1,4 @@
+set history save
+set autoeval on
+set forcestep on
+set linetrace+
