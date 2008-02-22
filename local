@@ -5,7 +5,7 @@ export EMAIL="sgk@cs.ucsb.edu"
 
 export PGDATA="$HOME/pgdata"
 export PGLOGFILE="$PGDATA/pgsql.log"
-export PGDATABASE="${PGDATABASE:-ietf_test}"
+export PGDATABASE="${PGDATABASE:-clustrun_devel}"
 
 export R_LIBS="$HOME/Library/R/library"
 export QUALNET_HOME="$HOME/qualnet/4.0"
