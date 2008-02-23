@@ -3,10 +3,13 @@ test -n "$VERBOSE" && echo $0... 1>&2
 
 alias -g :l="|$PAGER"
 alias -g :g="|egrep"
+alias -g :v="|egrep -v"
 alias -g :t="|tee"
 alias -g :e="2>&1"
 alias -g :c="|wc -l"
 alias -g :h="--help :el"
+alias -g :x="|xargs"
+
 alias -g :el=":e :l"
 alias -g :eg=":e :g"
 alias -g :et=":e :t"
@@ -17,3 +20,4 @@ alias -g :egl=":e :gl"
 alias -g :etl=":e :tl"
 
 alias -g :R="| R --vanilla --quiet"
+
