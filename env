@@ -24,8 +24,8 @@ export PERL5LIB=".:lib:$HOME/lib/perl"
 export RUBYOPT=rubygems
 case `uname` in
     Darwin) # OSX-specific...
-		export FLEX_HOME="$HOME/Library/flex_sdk_3"
-        export PATH="$HOME/bin:$FLEX_HOME/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin::/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
+    	export FLEX_HOME="$HOME/Library/flex_sdk_3"
+        export PATH="$HOME/bin:$FLEX_HOME/bin:/usr/local/apache2/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin::/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
         export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/sw/share/man:/usr/X11R6/man:/usr/share/man"
         export PERL5LIB=".:lib:$HOME/lib/perl:/sw/lib/perl5"
         export R_LIBS="$HOME/Library/R/2.6/library"
