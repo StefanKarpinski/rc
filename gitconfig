@@ -1,0 +1,27 @@
+[color]
+	ui = true
+[gui]
+	fontui = -family \"Lucida Grande\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"Andale Mono\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+	commitmsgwidth = 70
+	spellingdictionary = none
+	matchtrackingbranch = true
+[user]
+	email = stefan.karpinski@gmail.com
+	name = Stefan Karpinski
+[merge]
+	summary = true
+	tool = opendiff
+[alias]
+	stat = status
+	st = stash
+	ci = commit
+	co = checkout
+	br = branch
+	switch = checkout
+	sw = checkout
+	ls = ls-files
+	man = help
+[core]
+[core]
+	excludesfile = /Users/stefan/.gitexcludes
