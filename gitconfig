@@ -22,6 +22,6 @@
 	sw = checkout
 	ls = ls-files
 	man = help
-[core]
+	bi = bisect
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
