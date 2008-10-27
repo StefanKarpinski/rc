@@ -23,5 +23,6 @@
 	ls = ls-files
 	man = help
 	bi = bisect
+	unstage = rm --cached
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
