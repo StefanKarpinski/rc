@@ -1,6 +1,8 @@
 ## setup generic aliases
 test -n "$VERBOSE" && echo $0... 1>&2
 
+alias g=git
+
 alias ls="ls -F --color=auto"
 alias la="ls -A"
 alias lr="ls -R"

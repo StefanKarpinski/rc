@@ -13,16 +13,26 @@
 	summary = true
 	tool = opendiff
 [alias]
+	a = add
+	au = add -u
+	ai = add -i
+	ap = add -p
+	s = status
+	st = status
 	stat = status
-	st = stash
-	ci = commit
+	sta = stash
+	c = commit
+	amend = commit --amend
+	l = log
 	co = checkout
+	d = diff
+	dw = diff --color-words
 	br = branch
-	switch = checkout
-	sw = checkout
 	ls = ls-files
+	h = help
 	man = help
 	bi = bisect
-	unstage = rm --cached
+	u = reset --
+	unstage = reset --
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
