@@ -2,6 +2,7 @@
 test -n "$VERBOSE" && echo $0... 1>&2
 
 alias g=git
+alias gs="git status"
 
 alias ls="ls -F --color=auto"
 alias la="ls -A"

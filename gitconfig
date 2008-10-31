@@ -22,6 +22,7 @@
 	stat = status
 	sta = stash
 	c = commit
+	ca = commit -a
 	amend = commit --amend
 	l = log
 	co = checkout
