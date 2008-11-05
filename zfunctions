@@ -1,6 +1,13 @@
 ## functions for zsh sessions...
 test -n "$VERBOSE" && echo $0... 1>&2
 
+case $TERM in
+  screen)
+    function precmd  { echo -ne '\033kzsh\033\\\033_'${PWD/#$HOME/\~}'\033\\' }
+    function preexec { echo -ne '\033k'$1'\033\\\033_'${PWD/#$HOME/\~}'\033\\' }
+  ;;
+esac
+
 ## tries to acquire a usable ssh auth socket...
 
 function ssh-auth-sock-acquire {
