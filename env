@@ -18,7 +18,7 @@ export RSYNC_RSH=ssh
 export CVS_RSH=ssh
 
 # system-specific variables...
-export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
+export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/git/libexec/git-core:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
 export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/usr/X11R6/man:/usr/share/man"
 export PERL5LIB=".:lib:$HOME/lib/perl"
 export RUBYOPT=rubygems
