@@ -20,5 +20,5 @@ function prv () {
 }
 
 function ri () {
-	command ri -f ansi -T $* | less -f
+    command ri -f ansi -T $* | less -f
 }
