@@ -25,6 +25,10 @@
 	ca = commit -a
 	cam = commit -a -m
 	amend = commit --amend
+	re = rebase
+	ri = rebase -i
+	continue = rebase --continue
+	cont = rebase --continue
 	l = log
 	co = checkout
 	d = diff
