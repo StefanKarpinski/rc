@@ -22,6 +22,7 @@ alias rd="rmdir"
 alias md="mkdir -p"
 alias realpath="readlink -f"
 alias run-help="man"
+alias grep="grep -P"
 
 alias reload="exec \${0#-}"
 alias halt="sudo halt"
