@@ -23,10 +23,14 @@
 	sta = stash
 	c = commit
 	ca = commit -a
+	cm = commit -m
+	cv = commit -v
 	cam = commit -a -m
+	cav = commit -a -v
 	amend = commit --amend
 	re = rebase
 	ri = rebase -i
+	rim = rebase -i origin/master
 	continue = rebase --continue
 	cont = rebase --continue
 	l = log
