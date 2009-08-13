@@ -27,6 +27,8 @@
 	cv = commit -v
 	cam = commit -a -m
 	cav = commit -a -v
+	wip = commit -a -m wip
+	etc = commit -a -m ...
 	amend = commit --amend
 	re = rebase
 	ri = rebase -i
@@ -48,6 +50,7 @@
 	unstage = reset --
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
+	automergesetup = true
 [push]
 	default = matching
 [branch]
