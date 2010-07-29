@@ -57,7 +57,7 @@ setopt short_loops
 ### miscellaneous stuff ###
 
 ttyctl -f
-tabs -4
+which tabs >/dev/null && tabs -4
 
 ### source the appropriate files ###
 
