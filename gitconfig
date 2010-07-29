@@ -48,6 +48,7 @@
 	bi = bisect
 	u = reset --
 	unstage = reset --
+	fixup = commit --amend -CHEAD
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
 	automergesetup = true
