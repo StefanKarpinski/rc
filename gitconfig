@@ -45,6 +45,7 @@
 	man = help
 	unstage = reset --
 	fixup = commit --amend -CHEAD
+	contrib = shortlog -nes
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
 	automergesetup = true
