@@ -1,6 +1,8 @@
 ## zsh specific aliases
 test -n "$VERBOSE" && echo $0... 1>&2
 
+alias ve=vared
+
 alias -g :l="|$PAGER"
 alias -g :g="|egrep"
 alias -g :v="|egrep -v"

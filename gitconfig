@@ -3,11 +3,10 @@
 [gui]
 	fontui = -family \"Lucida Grande\" -size 12 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family \"Andale Mono\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
-	commitmsgwidth = 70
 	spellingdictionary = none
 	matchtrackingbranch = true
 [user]
-	email = stefan.karpinski@gmail.com
+	email = stefan@karpinski.org
 	name = Stefan Karpinski
 [merge]
 	summary = true
@@ -19,8 +18,8 @@
 	ap = add -p
 	s = status
 	st = status
-	stat = status
-	sta = stash
+	save = stash save --keep-index
+	pop = stash pop
 	c = commit
 	ca = commit -a
 	cm = commit -m
@@ -30,24 +29,22 @@
 	wip = commit -a -m wip
 	etc = commit -a -m ...
 	amend = commit --amend
-	re = rebase
 	ri = rebase -i
 	rim = rebase -i origin/master
 	continue = rebase --continue
 	cont = rebase --continue
-	l = log
 	co = checkout
+	lu = log -u
 	d = diff
 	dc = diff --cached
 	dw = diff --color-words
 	dcw = diff --cached --color-words
+	dwc = diff --cached --color-words
 	br = branch
 	ls = ls-files
-	h = help
 	man = help
-	bi = bisect
-	u = reset --
 	unstage = reset --
+	fixup = commit --amend -C HEAD
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
 	automergesetup = true

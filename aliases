@@ -36,6 +36,12 @@ alias pydb="python -m pdb"
 alias pyprof="python -m profile"
 alias pyc="python ~/bin/pyc.pyc"
 alias R="R -q --vanilla"
+alias jrake="jruby -S rake"
+
+alias j="julia"
+alias jb="julia --bare"
+alias jq="julia --quiet"
+alias jbq="julia --bare --quiet"
 
 # system-specific aliases...
 alias edit="$EDITOR"
