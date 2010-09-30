@@ -44,7 +44,7 @@
 	ls = ls-files
 	man = help
 	unstage = reset --
-	fixup = commit --amend -C HEAD
+	fixup = commit --amend -CHEAD
 [core]
 	excludesfile = /Users/stefan/.gitexcludes
 	automergesetup = true
