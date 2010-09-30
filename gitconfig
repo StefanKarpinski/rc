@@ -47,9 +47,11 @@
 	fixup = commit --amend -CHEAD
 	contrib = shortlog -nes
 [core]
-	excludesfile = /Users/stefan/.gitexcludes
+	excludesfile = /Users/stefan/rc/gitexcludes
 	automergesetup = true
 [push]
 	default = matching
 [branch]
 	autosetupmerge = true
+[mailmap]
+	file = /Users/stefan/rc/gitmailmap
