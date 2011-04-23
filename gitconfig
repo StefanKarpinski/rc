@@ -49,6 +49,7 @@
 [core]
 	excludesfile = /Users/stefan/rc/gitexcludes
 	automergesetup = true
+	quotepath = false
 [push]
 	default = matching
 [branch]
