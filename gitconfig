@@ -10,7 +10,6 @@
 	name = Stefan Karpinski
 [merge]
 	summary = true
-	tool = opendiff
 [alias]
 	a = add
 	au = add -u
@@ -52,8 +51,6 @@
 	automergesetup = true
 	quotepath = false
 [push]
-	default = matching
+	default = current
 [branch]
 	autosetupmerge = true
-[mailmap]
-	file = /Users/stefan/rc/gitmailmap
