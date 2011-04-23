@@ -23,6 +23,7 @@ alias md="mkdir -p"
 alias realpath="readlink -f"
 alias run-help="man"
 alias grep="grep -P"
+alias awk='awk -v OFS="\t"'
 alias bc="bc -ql"
 
 alias reload="exec \${0#-}"
