@@ -46,6 +46,7 @@
 	fixup = commit --amend -CHEAD
 	contrib = shortlog -nes
 	update = remote update --prune
+	up = remote update --prune
 [core]
 	excludesfile = /Users/stefan/rc/gitexcludes
 	automergesetup = true
