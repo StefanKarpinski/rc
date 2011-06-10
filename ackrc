@@ -1,0 +1,3 @@
+--sort-files
+--type-set julia=.j
+--type-add ruby=.rake,rakefile,Rakefile
