@@ -57,4 +57,4 @@
 	autosetupmerge = true
 [gist]
 	private = yes
-	extension = diff
+	extension = .diff
