@@ -55,3 +55,6 @@
 	default = current
 [branch]
 	autosetupmerge = true
+[gist]
+	private = yes
+	extension = diff

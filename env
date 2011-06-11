@@ -18,6 +18,11 @@ export FTP_PASSIVE=1
 export RSYNC_RSH=ssh
 export CVS_RSH=ssh
 
+export GITHUB_USER=StefanKarpinski
+if [ -f "$HOME/.github.token" ]; then
+	export GITHUB_TOKEN=$(cat "$HOME/.github.token")
+fi
+
 # system-specific variables...
 export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/git/libexec/git-core:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
 export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/usr/X11R6/man:/usr/share/man"
