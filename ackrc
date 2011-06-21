@@ -1,5 +1,9 @@
 --sort-files
---type-set
-julia=.j
 --type-add
 ruby=.rake,rakefile,Rakefile
+--type-set
+julia=.j
+--type-set
+markdown=.md,.markdown
+--type-set
+mediawiki=.mw,.mediawiki
