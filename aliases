@@ -60,4 +60,4 @@ alias psal="pipe-to $PAGER : psa"
 alias xget="wget -c -m -k -p -E -K -np -A jpg,jpeg,JPG,JPEG,mpg,mpeg,MPG,MPEG,mov,MOV,avi,AVI,wmv,WMV,ps,PS,pdf,PDF,Z,zip,ZIP,gz,tgz,bz2,tbz2 --header 'Cookie: id=valid' --header 'Cookie: ssid=valid' --header 'User-Agent: Mozilla'"
 
 # Etsy aliases
-alias seqcat="seqcat -c lib/hadoop/conf/hadoop-site.xml"
+alias seqcat="$HOME/etsy/seqcat/bin/seqcat -c $HOME/etsy/analytics/lib/hadoop/conf/core-site.xml"
