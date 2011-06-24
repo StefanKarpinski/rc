@@ -18,7 +18,7 @@
 	st = status -bs
 	save = stash save --keep-index
 	pop = stash pop
-	cv = commit -v
+	c = commit -v
 	ca = commit -va
 	cm = commit -m
 	cam = commit -am
