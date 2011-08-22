@@ -11,7 +11,6 @@
 [merge]
 	summary = true
 [alias]
-	a = add
 	au = add -u
 	ai = add -i
 	ap = add -p
@@ -32,13 +31,12 @@
 	cont = rebase --continue
 	co = checkout
 	l = log --decorate
-	ld = log --decorate
-	lu = log --decorate -u
-	lw = log --decorate -u --color-words --ignore-all-space
-	d = diff
-	dc = diff --cached
-	dw = diff --color-words --ignore-all-space
-	dcw = diff --cached --color-words --ignore-all-space
+	lu = log --decorate -M -C -u
+	lw = log --decorate -M -C -u --color-words --ignore-all-space
+	d = diff -M -C
+	dc = diff -M -C --cached
+	dw = diff -M -C --color-words --ignore-all-space
+	dcw = diff -M -C --cached --color-words --ignore-all-space
 	br = branch
 	ls = ls-files
 	man = help
