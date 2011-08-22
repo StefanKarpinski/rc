@@ -18,7 +18,7 @@
 	st = status -bs
 	save = stash save --keep-index
 	pop = stash pop
-    drop = stash drop
+	drop = stash drop
 	c = commit -v
 	ca = commit -va
 	cm = commit -m
@@ -31,8 +31,10 @@
 	continue = rebase --continue
 	cont = rebase --continue
 	co = checkout
-	lu = log -u
-    lw = log -u --color-words --ignore-all-space
+	l = log --decorate
+	ld = log --decorate
+	lu = log --decorate -u
+	lw = log --decorate -u --color-words --ignore-all-space
 	d = diff
 	dc = diff --cached
 	dw = diff --color-words --ignore-all-space
