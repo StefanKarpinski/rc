@@ -41,7 +41,7 @@
 	ls = ls-files
 	man = help
 	unstage = reset --
-	fix = commit --amend -CHEAD
+	fix = commit --allow-empty --amend -CHEAD
 	contrib = shortlog -nes
 	update = remote update --prune
 	up = remote update --prune
