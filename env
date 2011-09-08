@@ -46,6 +46,3 @@ case `uname` in
         ;;
     *)
 esac
-
-# doesn't really belong here but...
-umask 077
