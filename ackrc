@@ -7,3 +7,5 @@ julia=.j
 markdown=.md,.markdown
 --type-set
 mediawiki=.mw,.mediawiki
+--type-set
+smarty=.tpl
