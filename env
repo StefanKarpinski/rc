@@ -14,6 +14,7 @@ export LESS="-grXFz-7 -x4"
 export ACK_PAGER=$PAGER
 export EDITOR="vim -c start"
 export VISUAL=$EDITOR
+export JULIA_EDITOR="vim"
 export FTP_PASSIVE=1
 export RSYNC_RSH=ssh
 export CVS_RSH=ssh
@@ -37,7 +38,6 @@ case `uname` in
     Darwin) # OSX-specific...
     	export FLEX_HOME="$HOME/Library/flex_sdk_3"
         export PATH="$HOME/etsy/DevTools:/opt/ec2/bin:$HOME/bin:$FLEX_HOME/bin:/opt/local/lib/postgresql84/bin:/usr/local/libexec/git-core:/usr/local/ssl/bin:/usr/local/apache2/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin:."
-        export PATH="/Developer-3.2.5/usr/bin:$PATH" ### HACK
         export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/sw/share/man:/usr/X11R6/man:/usr/share/man"
         export LD_LIBRARY_PATH="/usr/local/ssl/lib"
         export R_LIBS="$HOME/Library/R/2.6/library"
