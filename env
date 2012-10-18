@@ -12,22 +12,13 @@ export SAVEHIST=100000
 export PAGER=less
 export LESS="-grXFz-7 -x4"
 export ACK_PAGER=$PAGER
-export EDITOR="vim -c start"
+export EDITOR="mate -wl1"
 export VISUAL=$EDITOR
-export JULIA_EDITOR="vim"
+export JULIA_EDITOR="textmate"
 export FTP_PASSIVE=1
 export RSYNC_RSH=ssh
 export CVS_RSH=ssh
 export JL_ANSWER_COLOR=magenta
-
-export GITHUB_USER=StefanKarpinski
-if [ -f "$HOME/.github.token" ]; then
-	export GITHUB_TOKEN=$(cat "$HOME/.github.token")
-fi
-export ETSY_GITHUB_USER=skarpinski
-if [ -f "$HOME/.etsy.github.token" ]; then
-	export ETSY_GITHUB_TOKEN=$(cat "$HOME/.etsy.github.token")
-fi
 
 # system-specific variables...
 export PATH="$HOME/bin:$HOME/usr/bin:/usr/local/git/libexec/git-core:/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin"
@@ -37,9 +28,8 @@ export RUBYOPT=rubygems
 case `uname` in
     Darwin) # OSX-specific...
     	export FLEX_HOME="$HOME/Library/flex_sdk_3"
-        export PATH="$HOME/etsy/DevTools:/opt/ec2/bin:$HOME/bin:$FLEX_HOME/bin:/opt/local/lib/postgresql84/bin:/usr/local/libexec/git-core:/usr/local/git/bin:/usr/local/ssl/bin:/usr/local/apache2/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin:."
+        export PATH="$HOME/bin:/opt/local/libexec/perl5.12:/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/Applications/Octave.app/Contents/Resources/bin:/opt/local/lib/postgresql84/bin:/usr/local/libexec/git-core:/usr/local/git/bin:/usr/local/ssl/bin:/usr/local/apache2/bin:/usr/local/bin:/usr/local/sbin:/opt/local/libexec/gnubin:/opt/local/bin:/opt/local/sbin:/sw/bin:/sw/sbin:/usr/X11R6/bin:/usr/bin:/usr/sbin:/bin:/sbin:."
         export MANPATH="/usr/local/share/man:/usr/local/man:/opt/local/share/man:/opt/local/man:/sw/share/man:/usr/X11R6/man:/usr/share/man"
-        export LD_LIBRARY_PATH="/usr/local/ssl/lib"
         export R_LIBS="$HOME/Library/R/2.6/library"
         export DISPLAY="${DISPLAY:-:0.0}"
         export JAVA_HOME=/Library/Java/Home

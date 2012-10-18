@@ -6,10 +6,8 @@
 	spellingdictionary = none
 	matchtrackingbranch = true
 [user]
-	email = stefan@karpinski.org
 	name = Stefan Karpinski
-[merge]
-	summary = true
+	email = stefan@karpinski.org
 [alias]
 	au = add -u
 	ai = add -i
@@ -56,3 +54,6 @@
 [gist]
 	private = yes
 	extension = .diff
+[github]
+	user = StefanKarpinski
+    password = !security 2>&1 >/dev/null find-generic-password -gs github.password | ruby -e 'print $1 if STDIN.gets =~ /^password: \\\"(.*)\\\"$/'

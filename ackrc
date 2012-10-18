@@ -2,10 +2,14 @@
 --type-add
 ruby=.rake,rakefile,Rakefile
 --type-set
-julia=.j
+julia=.jl
 --type-set
 markdown=.md,.markdown
 --type-set
 mediawiki=.mw,.mediawiki
 --type-set
 smarty=.tpl
+--type-set
+expmap=.expmap
+--type-set
+rst=.rst
